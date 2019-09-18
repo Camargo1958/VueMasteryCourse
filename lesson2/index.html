@@ -9,8 +9,16 @@
     <div class="nav-bar"></div>
 
     <div  id="app">
-        <h1>{{ product }}</h1>
-        <h2>{{ description }}</h2>
+        <div class="product">
+            <div class="product-image">
+                <img v-bind:src="image">
+            </div>
+            <div class="product-info">
+                <h1>{{ product }}</h1>
+                <h2>{{ description }}</h2>
+                <a :href="link" target="_blank">More products like this</a>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="main.js"></script>
